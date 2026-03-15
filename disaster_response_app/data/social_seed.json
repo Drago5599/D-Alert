@@ -1,0 +1,20 @@
+[
+  {"text":"Flood water rising near Marcus Garvey Drive, cars can't pass!", "location_name":"Marcus Garvey Drive"},
+  {"text":"Landslide blocking small road by Red Hills, debris on slope", "location_name":"Red Hills"},
+  {"text":"Strong winds tore off zinc roofs near Half Way Tree", "location_name":"Half Way Tree"},
+  {"text":"Fire in a yard off Mountain View Ave, thick smoke", "location_name":"Mountain View Ave"},
+  {"text":"Elderly man needs medical help, trapped upstairs by flood", "location_name":"New Kingston"},
+  {"text":"Road collapsed close to Papine bridge, avoid area", "location_name":"Papine"},
+  {"text":"Small flooding in the street", "location_name":"St. Andrew"},
+  {"text":"Power lines down across the road", "location_name":"Kingston"},
+  {"text":"Tree fell on a house, people inside", "location_name":"Half Way Tree"},
+  {"text":"Water level high but passable", "location_name":"Marcus Garvey Drive"},
+  {"text":"Smoke seen near the stadium", "location_name":"Mountain View Ave"},
+  {"text":"Ambulance needed for injury", "location_name":"New Kingston"},
+  {"text":"Mud sliding down the hill", "location_name":"Red Hills"},
+  {"text":"Roof damage reported", "location_name":"Half Way Tree"},
+  {"text":"Car stuck in water", "location_name":"Marcus Garvey Drive"},
+  {"text":"Bridge looks unstable", "location_name":"Papine"},
+  {"text":"Panic in the streets", "location_name":"Kingston"},
+  {"text":"Need food and water supplies", "location_name":"St. Andrew"}
+]

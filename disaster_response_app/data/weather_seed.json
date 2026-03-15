@@ -1,0 +1,8 @@
+[
+  {"event":"Flash Flood Watch", "headline":"Flash Flood Watch in effect for Kingston", "areaDesc":"Kingston", "severity": 2},
+  {"event":"Hurricane Warning", "headline":"Hurricane approaching SE Coast", "areaDesc":"St. Andrew", "severity": 3},
+  {"event":"High Wind Advisory", "headline":"Gusts up to 50mph expected", "areaDesc":"Half Way Tree", "severity": 2},
+  {"event":"Severe Thunderstorm", "headline":"Heavy rain and lightning", "areaDesc":"Red Hills", "severity": 2},
+  {"event":"Heat Advisory", "headline":"Extreme heat index expected", "areaDesc":"Portmore", "severity": 1},
+  {"event":"Small Craft Warning", "headline":"Dangerous seas", "areaDesc":"Harbour View", "severity": 2}
+]
