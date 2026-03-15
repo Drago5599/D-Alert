@@ -16,6 +16,7 @@ Tech stack:
 LayerTechnologyBackend APIPython + FastAPIDatabaseSQLite via SQLModelMappingFolium + StreamlitAI ClassificationOpenAI APIFrontendHTML + CSS + JavaScriptHostingRender
 
 In short — D-Alert is a smart triage system for disasters, turning raw reports into actionable, prioritized intelligence for emergency teams.
+
 🐍 Python — 52.9% (the backbone)
 Python is doing the heavy lifting — it's the backend/server-side logic. In a disaster response app this typically means:
 
