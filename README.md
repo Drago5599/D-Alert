@@ -1,3 +1,4 @@
+hosted: https://d-alert.onrender.com/
 D-Alert — Disaster Response System
 D-Alert is a real-time disaster alert and response web application designed to help emergency responders and the public track, classify, and prioritize disaster events as they happen.
 
