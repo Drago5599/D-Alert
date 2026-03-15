@@ -1,3 +1,6 @@
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+import os
 from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlmodel import Session, select, desc
@@ -17,6 +20,13 @@ async def lifespan(app: FastAPI):
     yield
 
 app = FastAPI(lifespan=lifespan)
+# Serve frontend static files
+frontend_path = os.path.join(os.path.dirname(__file__), "../../frontend")
+app.mount("/static", StaticFiles(directory=frontend_path), name="static")
+
+@app.get("/")
+def serve_frontend():
+    return FileResponse(os.path.join(frontend_path, "index.html"))
 
 # Add CORS middleware
 app.add_middleware(
