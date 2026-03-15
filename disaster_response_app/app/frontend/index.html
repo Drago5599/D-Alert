@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Response Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🚨 Smart Disaster Response Assistant</h1>
+            <div class="status-badge" id="backend-status">Backend: Checking...</div>
+        </div>
+    </header>
+
+    <div id="notification" class="notification hidden">
+        <span id="notification-message"></span>
+        <button id="notification-close">&times;</button>
+    </div>
+
+    <main class="container">
+        <section class="metrics">
+            <div class="metric-card">
+                <h3>Active Alerts</h3>
+                <p id="metric-active">0</p>
+            </div>
+            <div class="metric-card">
+                <h3>High Priority</h3>
+                <p id="metric-priority">0</p>
+            </div>
+            <div class="metric-card">
+                <h3>Clusters</h3>
+                <p id="metric-clusters">0</p>
+            </div>
+        </section>
+
+        <div class="dashboard-grid">
+            <section class="map-container">
+                <h2>Live Disaster Map</h2>
+                <div id="map"></div>
+            </section>
+
+            <section class="sidebar">
+                <div class="priority-list">
+                    <h2>Top Priority</h2>
+                    <div id="priority-items">
+                        <!-- Priority items injected here -->
+                    </div>
+                </div>
+
+                <div class="report-form">
+                    <h2>📝 Report New Incident</h2>
+                    <form id="incident-form">
+                        <div class="form-group">
+                            <label for="text">Description</label>
+                            <input type="text" id="text" placeholder="What's happening?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location">
+                                <option value="Kingston">Kingston</option>
+                                <option value="St. Andrew">St. Andrew</option>
+                                <option value="Half Way Tree">Half Way Tree</option>
+                                <option value="New Kingston">New Kingston</option>
+                                <option value="Papine">Papine</option>
+                                <option value="Red Hills">Red Hills</option>
+                                <option value="Mountain View Ave">Mountain View Ave</option>
+                                <option value="Marcus Garvey Drive">Marcus Garvey Drive</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit Report</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <section class="live-feed">
+            <h2>Live Feed</h2>
+            <div class="table-container">
+                <table id="alerts-table">
+                    <thead>
+                        <tr>
+                            <th>Time (UTC)</th>
+                            <th>Type</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                            <th>Risk Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="alerts-body">
+                        <!-- Table rows injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
