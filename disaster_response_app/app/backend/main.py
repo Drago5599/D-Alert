@@ -21,7 +21,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 # Serve frontend static files
-frontend_path = os.path.join(os.path.dirname(__file__), "../../frontend")
+frontend_path = os.path.join(os.getcwd(), "frontend")
 app.mount("/static", StaticFiles(directory=frontend_path), name="static")
 
 @app.get("/")
