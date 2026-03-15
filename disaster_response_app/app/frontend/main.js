@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000';
+const API_URL = "https://d-alert.onrender.com";
 let map, markers = [];
 
 const notification = document.getElementById('notification');
