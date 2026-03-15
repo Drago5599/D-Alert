@@ -20,7 +20,6 @@ async def lifespan(app: FastAPI):
     yield
 
 app = FastAPI(lifespan=lifespan)
-# Serve frontend static files
 frontend_path = os.path.join(os.getcwd(), "frontend")
 app.mount("/static", StaticFiles(directory=frontend_path), name="static")
 
